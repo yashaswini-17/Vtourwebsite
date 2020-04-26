@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vtour_Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+  function validateForm() {
+    var x = document.forms["myForm1"]["spot"].value;
+    var y = document.forms["myForm1"]["count"].value;
+   
+    var z=0
+    if (y>0){
+    if (x==1) {
+        z=4500*y;
+    alert("Your Total Amount is " + z);
+   
+  }
+  else if(x==2){
+    z=5300*y;
+    alert("Your Total Amount is " + z);
+   
+    return true;
+  }
+  else if(x==3){
+    z=6400*y;
+    alert("Your Total Amount is " + z);
+    
+    return true;
+  }
+  else{
+      alert("select a destination from the above list");
+      return false;
+  }
+  }
+  else{
+    alert("Number of persons should be atleast one");
+    return false;
+  }
+  }
+  </script>
+  
+ <style>
+    
+  #one{
+      text-align: center;
+      background-color:#b3d4fc;
+      margin-top:0px;
+      padding-top: 5px;
+      height:50px;
+      font-family:fantasy;
+      color:black;
+      
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .submitbtn {
+    color: black;
+    padding: 5px 5px;
+    margin-top:5px;
+    display:inline-block;
+    cursor: pointer;
+    opacity: 0.9;
+    background-color:white;
+    text-align: center;
+    
+
+  }
+  body{
+    background-image: url(lo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ #scr{
+   background-color: bisque;
+   color:brown;
+ }
+ #two{
+   color:white;
+   font-family:inherit;
+   font-weight: bolder;
+ }
+</style>
+</head>
+<body>
+  
+
+  <h2 id="one">
+
+    <span class="glyphicon glyphicon-plane"></span><span class="gap"></span>VTOUR 
+  </h2> 
+  
+    <div id="scr" class=container-fluid>
+      <marquee behavior="scroll" direction="left">Medical Insurance is Provided in Case of Accidents</marquee>
+    </div>
+        <div id="two" class="container">
+          <h1>Book Your Tickets</h1>
+          
+          <p>Please fill in this form </p>
+          
+
+          <form name="myForm1" action="index.html" onsubmit=return validateForm() method="post">
+          
+          <label for="name">Name</label>
+          <br>
+          <input style="height:43px ;width:50%;background-color: #ddd;color:black" type='text' placeholder="Enter Your Name"  name="fname" required >
+          <br>
+          <label for="no of persons"><b>Number Of Persons</b></label>
+          <br>
+          <input style="height:43px;width:50%;background-color: #ddd;color:black" type="text" placeholder=" Enter No. of persons" name="count"  minvalue=1 required>
+          <br> 
+          <label for="Destination"><b>Destination</b></label>
+          <br>
+          <select style="height:43px ;width:50%;background-color: #ddd;color:black;"   id="select" class="form-item__element form-item__element--select" name="spot" required>
+            <option disabled selected value="">Please Select Destination</option>
+            <option value="1">HYDERABAD</option>
+            <option value="2">DELHI</option>
+            <option value="3">KERALA</option>
+            
+            
+          </select>
+          
+          
+        
+          <br>
+          <label for="phone number"><b></b>Phone Number</label>
+          <input  style="height:43px ;width:50%;background-color: #ddd;color:black" type="num" placeholder="Enter  mobile number"class="form-control" minlength="10"  maxlength="10" name="num"  required>
+            
+          <label for="phonee number"><b>Alternate Number</b></label>
+          <input style="height:43px ;width:50%;background-color: #ddd;color:black"type="num" placeholder="Enter your mobile number" class="form-control" minlength="10"  maxlength="10" name="num"   >
+         <a href="index.html"> <button type="submit" class="submitbtn">Submit</button></a>
+      
+          
+        </div>
+      </form>
+      </body>

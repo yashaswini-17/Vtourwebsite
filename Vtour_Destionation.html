@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vtour_Destination</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $("button").click(function(){
+      alert("The paragraph was clicked.");
+    });
+  });
+    </script>
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+#one{
+      text-align: center;
+      background-color:#b3d4fc;
+      margin-top:0px;
+      padding-top: 5px;
+      height:50px;
+      font-family: fantasy;
+      color:black;
+      
+  }
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 350px; /* Should be removed. Only for demonstration */
+
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .navbar{
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  perspective: 1000px;
+  margin:auto;
+  margin-top: 20px;
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+#yash{
+              float:left;
+              width:385px;
+              margin-bottom:5px;
+              height:300px;
+            }
+            .vijay{
+              padding:20px;
+              height:50px;
+              width:100%;
+              font-size:20px;
+            }
+        #hm1{
+          background-color:salmon;
+          color:tomato;
+        
+                 }
+            .vijay{
+  background-color:black;
+  font-size: 15px;
+  color:white;
+  margin-bottom:0px;
+  
+            }
+            #cat{
+  background-color:skyblue;
+  margin-left:0px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+#ca{
+  padding-top: 10px;
+  background-color:skyblue;
+ width:100%;
+ margin-top:0px;
+
+}
+.tab { 
+            display: inline-block; 
+            margin-left:500px; 
+            color:white;
+}'
+
+  #cd{
+    text-align:center;
+  }
+  .navbar li a:hover{
+    color: bisque;
+
+  }
+  #hm1{
+          background-color:salmon;
+          color:tomato;
+        
+                 }
+                 #ab{
+    font-size:20px;
+    }
+  
+</style>
+</head>
+<body>
+
+  <h2 id="one">
+
+    <span class="glyphicon glyphicon-plane"></span><span class="gap"></span>VTOUR 
+  </h2> 
+  <nav id="hm1" class="navbar navbar-inverse">
+    <div class="container-fluid" >
+     
+      <ul id="cd"class="nav navbar-nav">
+        <li id="ab"><a href="index.html"><span class="glyphicon glyphicon-home"style='font-size:20px'></span>HOME</a></li>
+        
+        <li id="ab"><a href="Vtour_SignIn.html"><span class="glyphicon glyphicon-th-list"style='font-size:20px'></span>BUY TICKETS</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="ab"><a href="Vtour_Registration.html"><span class="glyphicon glyphicon-user"style='font-size:20px'></span> Sign Up</a></li>
+        <li id="ab"><a href="Vtour_SignIn.html"><span class="glyphicon glyphicon-log-in"style='font-size:20px'></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="build">
+<div class="column" style="background-color: black;">
+
+    <div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front">
+        <img src="hyd.jpg" alt="Paris" style="width:300px;height:300px">
+        </div>
+        <div class="flip-box-back">
+            <h2>HYDERABAD</h2>
+            <br>
+            <h4>Charminar</h4>
+            <h4>Salar Jung Museum</h4>
+            <h4>Golconda Fort</h4>
+            <h4>Hussain Sagar</h4>
+            <h4>Ramoji FilmCity</h4>
+            <h3 style="color:red"><b>Rs.4500/- per person</b></h3>
+            
+            
+        </div>
+    </div>
+    </div>
+</div>
+<div class="column" style="background-color: black;">
+
+    <div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front">
+        <img src="Delhi.jpg" alt="Paris" style="width:300px;height:300px">
+        </div>
+        <div class="flip-box-back">
+            <h2>DELHI</h2>
+            <br>
+            <h4>Taj Mahal</h4>
+            <h4>Red Fort</h4>
+            <h4>India Gate</h4>
+            <h4>Qutub Minar</h4>
+            <h4>Lotus Temple</h4>
+            <h3 style="color:red"><b>Rs.5300/- per person</b></h3>
+            
+        </div>
+    </div>
+    </div>
+</div>
+<div class="column" style="background-color: black;" > 
+
+    <div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front">
+        <img  src="Kerala.jpg" alt="Paris" style="width:300px;height:300px">
+        </div>
+        <div class="flip-box-back">
+        <h2>KERALA</h2>
+        <br>
+        <h4>Alleppey</h4>
+        <h4>Wayanad</h4>
+        <h4>Cochin</h4>
+        <h4>Munnar</h4>
+        <h4>Kumarakom</h4>
+        <h3 style="color:red"><b>Rs.6400/- per person</b></h3>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div id="ca">
+  <div class="container">
+  <div id="cat" class="row">
+  <div id="yash" class="column">
+  <h3 style="color:white">Vtour</h3>
+  <hr>
+  <address style="color:white">
+    Vtour<br>
+    How It Works<br>
+    Terms Of Service<br>
+    Privacy<br>
+    Careers<br>
+    Help</address>
+  </div>
+  <div id="yash" class="column">
+  <h3 style="color:white">Travel</h3>
+  <hr>
+  <address style="color:white">
+    
+    Plan Your Trip<br>
+    Trust & Safety<br>
+    Customer Service<br>
+    Standards<br>
+    Dispute Resolution<br>
+    Review Policy<br>
+  </div>
+  <div id="yash" class="column">
+    <h3 style="color:white">Why Vtour</h3>
+    <hr>
+    <address style="color:white">
+      Why Us<br>
+      CS Policy<br>
+      Standards<br>
+      Trust & Safety<br>
+      Reliability<br>
+      Commitment<br>
+    </div>
+  
+  </div>
+  </div>
+  
+  
+    <div class="vijay">
+
+      <p>copy rights@2020<span class="tab"></span>Devoloped by VTOUR</p> 
+    
+    </div>
+
+</body>
+</html>
